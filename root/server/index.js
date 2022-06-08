@@ -31,8 +31,8 @@ let sharedsession = require("express-socket.io-session");
 let io = require('socket.io')(http);
 io.use(sharedsession(expSession));
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+app.get('*', (req, res) => {
+    res.render('base.pug')
 })
 
 io.on('connection', socket => {

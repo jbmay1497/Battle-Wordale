@@ -1,5 +1,3 @@
-/* Copyright G. Hemingway, 2019 - All rights reserved */
-
 import React from "react";
 import styled from "styled-components";
 
